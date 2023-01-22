@@ -1,0 +1,82 @@
+@import"css/reset.css";
+
+canvas{
+    width: 1500px;
+    height: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+#wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: gainsboro;
+    overflow: hidden;
+}
+button{
+    border: none;
+    width: 200px; height: 60px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+button:hover{
+    border: 3px solid rgb(78, 58, 78);
+    transition: .3s;
+    font-weight: bold;
+}
+#btns{
+    position: relative;
+}
+#line-width{
+    margin-bottom: 30px;
+}
+.right{
+    position: absolute;
+    right: 2%; bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.right > input{
+    margin-bottom: 30px;
+}
+.color_box{
+    position: absolute;
+    left: 8%; top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+}
+
+.color-option{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform ease-in-out .3s;
+    border-radius: 25px;
+    border:5px solid white;
+}
+.color-option:hover{
+    transform: scale(1.5);
+}
+input#color{
+    width: 45px; height: 45px;
+    overflow: hidden;
+    border: none;
+}
+#text{
+    width: 200px; height: 60px;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
